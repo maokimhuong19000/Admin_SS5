@@ -92,8 +92,8 @@
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item active" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <a class="collapse-item active" href="{{url('http://127.0.0.1:8000/admin/404')}}">404 Page</a>
+                        <a class="collapse-item" href="{{url('http://127.0.0.1:8000/admin/blank')}}">Blank Page</a>
                     </div>
                 </div>
             </li>

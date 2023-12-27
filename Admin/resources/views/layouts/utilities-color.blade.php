@@ -1,4 +1,13 @@
-<?php
+<link href="{{ asset('/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('/js/sb-admin-2.min.js') }}"></script>
+    <script src="{{ asset('/vendor/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ asset('/js/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ asset('/js/demo/chart-pie-demo.js') }}"></script>
+
 <body id="page-top">
 
 <!-- Page Wrapper -->
@@ -91,8 +100,8 @@
                     <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                    <a class="collapse-item" href="{{url('http://127.0.0.1:8000/admin/404')}}">404 Page</a>
+                    <a class="collapse-item" href="http://127.0.0.1:8000/admin/blank">Blank Page</a>
                 </div>
             </div>
         </li>
@@ -473,4 +482,4 @@
         </div>
     </div>
 </div>
-?>
+
