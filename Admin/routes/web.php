@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\admin;
+
 use App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +15,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::get('/',[HomeController::class,'home']);
+// Route::get('/login',[LoginController::class,'login']);
+// Route::get('/button',[ButtonsController::class,'button']);
+// Route::get('/registeration',[RegisterController::class,'registeration']);
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', [HomeController::class, 'home']);
+    Route::get('/login', [LoginController::class, 'login']);
+    Route::get('/button', [ButtonsController::class, 'button']);
+    Route::get('/registeration', [RegisterController::class, 'registeration']);
+    Route::get('/cards', [CardController::class, 'cards']);
+});
 
-Route::get('/',[HomeController::class,'home']);
-Route::get('/login',[LoginController::class,'login']);
-Route::get('/button',[ButtonsController::class,'button']);
-Route::get('/registeration',[RegisterController::class,'registeration']);
+Route::fallback(function () {
+    return view('layouts.404');
+});

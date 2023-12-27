@@ -26,16 +26,16 @@
                                             id="exampleInputEmail" aria-describedby="emailHelp"
                                             placeholder="Enter Email Address...">
                                     </div>
-                                    <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    <a href="{{url('http://127.0.0.1:8000/admin/login')}}" class="btn btn-primary btn-user btn-block">
                                         Reset Password
                                     </a>
                                 </form>
                                 <hr>
                                 <div class="text-center">
-                                    <a class="small" href="register.html">Create an Account!</a>
+                                    <a class="small" href="{{url('http://127.0.0.1:8000/admin/registeration')}}">Create an Account!</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="login.html">Already have an account? Login!</a>
+                                    <a class="small" href="{{url('http://127.0.0.1:8000/admin/login')}}">Already have an account? Login!</a>
                                 </div>
                             </div>
                         </div>

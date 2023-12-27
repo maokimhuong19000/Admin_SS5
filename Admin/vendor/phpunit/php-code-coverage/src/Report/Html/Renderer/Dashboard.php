@@ -64,7 +64,7 @@ final class Dashboard extends Renderer
     protected function activeBreadcrumb(AbstractNode $node): string
     {
         return sprintf(
-            '         <li class="breadcrumb-item"><a href="index.html">%s</a></li>' . "\n" .
+            '         <li class="breadcrumb-item"><a href="{{url('http://127.0.0.1:8000/admin')}}">%s</a></li>' . "\n" .
             '         <li class="breadcrumb-item active">(Dashboard)</li>' . "\n",
             $node->name()
         );
