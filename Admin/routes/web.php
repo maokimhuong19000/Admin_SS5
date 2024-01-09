@@ -24,6 +24,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/registeration', [RegisterController::class, 'registeration']);
     Route::get('/cards', [CardController::class, 'cards']);
     Route::get('/blank', [BlankController::class, 'blank']);
+    Route::get('/table', [TableController::class, 'table']);
 });
 // Fallack Route Controller //
 Route::fallback(function () {

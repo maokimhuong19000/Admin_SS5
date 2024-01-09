@@ -1,3 +1,5 @@
+<link href="{{ asset('/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/sb-admin-2.min.css') }}" rel="stylesheet">
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -44,7 +46,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
                         <a class="collapse-item" href="{{url('http://127.0.0.1:8000/admin/button')}}">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <a class="collapse-item" href="{{url('http://127.0.0.1:8000/admin/cards')}}">Cards</a>
                     </div>
                 </div>
             </li>
@@ -391,8 +393,7 @@
             </div>
         </div>
     </div>
-    <link href="{{ asset('/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/css/sb-admin-2.min.css') }}" rel="stylesheet">
+
     <script src="{{ asset('/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('/vendor/jquery-easing/jquery.easing.min.js') }}"></script>

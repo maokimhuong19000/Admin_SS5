@@ -1,4 +1,5 @@
-
+<link href="{{ asset('/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/sb-admin-2.min.css') }}" rel="stylesheet">
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -334,12 +335,13 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+                {{-- add profile page --}}
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+
 
                 </div>
+                {{-- End profile page --}}
                 <!-- /.container-fluid -->
 
             </div>
@@ -385,8 +387,7 @@
             </div>
         </div>
     </div>
-    <link href="{{ asset('/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/css/sb-admin-2.min.css') }}" rel="stylesheet">
+
     <script src="{{ asset('/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
